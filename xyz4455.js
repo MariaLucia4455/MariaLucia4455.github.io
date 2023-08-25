@@ -12,6 +12,7 @@ var pcon = document.getElementById("pcon");
 var tset = document.getElementById("tset");
 var images = document.querySelectorAll('img.thumbnail2');
 var ac = document.getElementById("da");
+var cors = "https://corsproxy.io/?";
 
 
 dimg.ondblclick = function() {
@@ -53,11 +54,11 @@ alert("Invalid Password!!");
 //vivaset title and link 
 
 lawa.ondblclick = function() {
-video.src ="https://api.onedrive.com/v1.0/shares/s!AkQaoAYW7i4_gQcX-dbYGWR1nnRO/root/content"; 
+video.src = cors + "https://api.onedrive.com/v1.0/shares/s!AkQaoAYW7i4_gQcX-dbYGWR1nnRO/root/content"; 
 vidtitle.innerHTML = "Lawa (480p)";
 video.poster  = "img/lawa.jpeg"
   
-ac.href ="https://api.onedrive.com/v1.0/shares/s!AkQaoAYW7i4_gQcX-dbYGWR1nnRO/root/content";  
+ac.href = "https://api.onedrive.com/v1.0/shares/s!AkQaoAYW7i4_gQcX-dbYGWR1nnRO/root/content";  
 ac.innerHTML = "Download 507MB"; 
 }
 
